@@ -11,7 +11,7 @@
 #### 1. Filter SNPs (only SNPs with allele frequency > 50%, good mapping quality and coverage were remained)
 > sh [filter.sh](https://github.com/qslin/Huanzhong/blob/master/SP105/filter.sh) /path/to/snp/file /path/to/genome/reference
 #### 2. Compare SNPs among samples (all common SNPs were deleted)
-> perl [QSBSA.pl](https://github.com/qslin/Bulk-Segregation-Analysis/blob/master/QSBSA.pl) -f=hvl/snp3.vcf -v=vcf_all.txt -o=SP105
+> perl [QSBSA.pl](https://github.com/qslin/Bulk-Segregation-Analysis/blob/master/QSBSA.pl) -f=SP105/snp3.vcf -v=vcf_all.txt -o=SP105
 #### 3. Extract functional annotations 
 > sh [extract.sh](https://github.com/qslin/Huanzhong/blob/master/extract.sh) /path/to/filtered/snp/file /path/to/annotated/snp/file /path/to/output/file
 
